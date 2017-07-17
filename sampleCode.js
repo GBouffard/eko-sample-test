@@ -40,7 +40,7 @@ let lieButton = buttonContainer.querySelector('#lie');
 let truthButton = buttonContainer.querySelector('#truth');
 
 define(function() {
-  return function(player, context) {          
+  return function(player, context) {
     player.overlays.add('buttonContainer', buttonContainer, { visible: false });
     
     player.repository.get('node_intro_loop_9ff125').on('nodestart', function() {
