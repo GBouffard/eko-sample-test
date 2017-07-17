@@ -29,17 +29,21 @@ Within the repo, src/js /app.js is the source of the code
 
 Eko API
 ----
-https://developer.helloeko.com/api/InterludePlayer.html
+https://developer.helloeko.com/api/
 
-examples of some that we went through:
+useful additional information:
+the code can also be edited within the eko platform;
+the tiny forking button leads to a tab to open the internal code panel.
+There is a push button, to push changes within the eko repo (with a commit message to add).
+There is also preview and publish buttons.
 
 ```
-in the eko platform 
-right click on element "get element ID" (at the bottom) and copy button to copy it, then can be paste on code 
+in the eko platform, we can right click on the element "get element ID" (at the bottom)
+- then and copy on clipboard to then paste and use in our code
+
 player.seek() is part of the eko api to jump to the next node (video part) to be read 
-  
-but it will jump with a delay...unless we prefetch videos when one is already being read 
-.addPrefetch() with the node ID is how it's done 
+but it will jump with a delay...unless we prefetch videos when one is already being read;
+This is why in our code, we use .addPrefetch()
   
 Then, we can do push and add the name of the commit 
 (we can also pull locally) 
